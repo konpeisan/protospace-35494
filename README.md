@@ -40,13 +40,13 @@ Things you may want to cover:
 
 ### prototypesテーブル
 
-| Column      | Type        | Options                        |
-| ----------- | ----------- | ------------------------------ |
-| title       |  string     |  null: false                   |
-| catch_copy  |  text       |  null: false                   |
-| concept     |  text       |  null: false                   |
-| image       |ActiveStorage|                                |
-| user        |  references |  null: false, foreign_key: true|
+| Column      | Type        | Options             |
+| ----------- | ----------- | ------------------- |
+| title       |  string     |  null: false        |
+| catch_copy  |  text       |  null: false        |
+| concept     |  text       |  null: false        |
+| image       |ActiveStorage|                     |
+| user        |  references |  foreign_key: true  |
 
 ## association
 - belongs_to :user
@@ -54,11 +54,11 @@ Things you may want to cover:
 
 ### commentsテーブル
 
-| Column      | Type        | Options                        |
-| ----------- | ----------- | ------------------------------ |
-| text        |  text       |  null: false                   |
-| user        |  references |  null: false, foreign_key: true|
-| prototype   |  references |  null: false, foreign_key: true|
+| Column      | Type        | Options             |
+| ----------- | ----------- | ------------------- |
+| text        |  text       |  null: false        |
+| user        |  references |  foreign_key: true  |
+| prototype   |  references |  foreign_key: true  |
 
 ## association
 - belongs_to :user
